@@ -1,0 +1,48 @@
+.overHide {
+  overflow: hidden;
+  background-color: #1f2029;
+}
+
+.animsition {
+  position: relative;
+  animation-fill-mode: both;
+  animation: showin 400ms;
+}
+
+@keyframes showin {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.headerFix {
+  position: fixed;
+  background-color: rgba(20, 21, 26, 0.96);
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.headerVisible {
+  transform: translateY(0);
+}
+
+.cursorHover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 12px rgb(255 255 255 / 20%);
+}
+
+.cursorHover,
+.cursorHoverBg {
+  transform: scale(2) translateX(-25%) translateY(-25%);
+  border: none;
+}
+
+.cursorGone {
+  opacity: 0;
+}

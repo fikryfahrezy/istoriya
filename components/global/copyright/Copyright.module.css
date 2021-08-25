@@ -1,0 +1,20 @@
+.copyr {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  z-index: 1;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1199px) {
+  .copyr {
+    bottom: 15px;
+    right: 17px;
+  }
+}

@@ -1,0 +1,96 @@
+.cdHeader {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  box-shadow: none;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: all 300ms linear;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.headerWrapper {
+  position: relative;
+  width: calc(100% - 100px);
+  margin-left: 50px;
+}
+
+.logoWrap {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 44px;
+  cursor: pointer;
+}
+
+.navButWrap {
+  position: relative;
+  float: right;
+  padding-left: 15px;
+  padding-top: 15px;
+  margin-top: 26px;
+  transition: all 0.3s ease-out;
+}
+
+.menuIcon {
+  position: relative;
+  display: block;
+  height: 30px;
+  width: 30px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.navActive {
+  visibility: visible;
+}
+
+.menuIconLine {
+  display: block;
+  height: 2px;
+  width: 30px;
+  margin-bottom: 7px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.5s ease;
+}
+
+.menuIconLineLeft {
+  width: 16.5px;
+  transition: all 200ms linear;
+}
+
+.menuIconLineRight {
+  width: 16.5px;
+  float: right;
+  transition: all 200ms linear;
+}
+
+.menuIcon:hover .menuIconLineRight,
+.menuIcon:hover .menuIconLineLeft {
+  width: 30px;
+}
+
+.navActive .menuIconLine {
+  background-color: #fff;
+  transform: translate(0px, 0px) rotate(-45deg);
+}
+
+.navActive.menuIcon:hover .menuIconLineLeft,
+.navActive.menuIcon:hover .menuIconLineRight {
+  width: 15px;
+}
+
+.navActive .menuIconLineLeft {
+  width: 15px;
+  transform: translate(2px, 4px) rotate(45deg);
+}
+
+.navActive .menuIconLineRight {
+  width: 15px;
+  float: right;
+  transform: translate(-3px, -3.5px) rotate(45deg);
+}

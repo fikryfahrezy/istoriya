@@ -1,0 +1,221 @@
+.pageContainer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .pageContainer {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pageContainer {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pageContainer {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pageContainer {
+    max-width: 1140px;
+  }
+}
+
+.innerPageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .innerPageContainer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.topContainer {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  margin-bottom: 1.5rem;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .topContainer {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+.filterContainer {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.filterList {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.filterItem {
+  display: block;
+  margin-right: 15px;
+  padding: 0;
+  float: left;
+}
+
+.filterBtn {
+  position: relative;
+  display: inline-block;
+  color: rgba(200, 200, 200, 0.5);
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 22px;
+  letter-spacing: 1px;
+  transition: all 300ms linear;
+  cursor: pointer;
+  outline: none;
+}
+
+.filterBtn:hover {
+  color: #fff;
+}
+
+.filterBtn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -9px;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 200ms linear;
+  opacity: 0;
+}
+
+.currentFilterBtn {
+  color: #fff;
+}
+
+.filterBtn:hover::before,
+.filterBtn.currentFilterBtn::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-4px);
+}
+
+.masonryItem {
+  position: relative;
+  display: block;
+  width: calc(50% - 50px);
+  margin: 25px;
+  margin-left: 24px;
+  overflow: hidden;
+  float: left;
+  transform: translate3d(1px, 0, 0);
+  transition: all 300ms linear;
+  cursor: url('/img/more.png') 17 17, pointer;
+}
+
+@media (max-width: 767px) {
+  .masonryItem {
+    width: calc(100% - 70px);
+    margin: 35px;
+    margin-left: 35px;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.masonryImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 300ms linear;
+}
+
+.masonryItem:hover .masonryImg {
+  transform: scale(1.02);
+}
+
+.masonryMask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(31, 32, 41, 0);
+  transition: all 200ms linear;
+  cursor: url('/img/more.png') 17 17, pointer;
+}
+
+.masonryItem:hover .masonryMask {
+  background-color: rgba(31, 32, 41, 0.7);
+}
+
+.masonryText {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 15px;
+  left: 15px;
+  color: #ebebeb;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 16px;
+  letter-spacing: 3px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 300ms linear;
+  writing-mode: vertical-lr;
+  cursor: url('/img/more.png') 17 17, pointer;
+}
+
+.masonryItem:hover .masonryText {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.masonryTitle {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 15px;
+  right: 15px;
+  color: #fff;
+  font-weight: 300;
+  opacity: 0;
+  letter-spacing: 2px;
+  transition: all 300ms linear;
+  transform: translateY(-20px);
+  cursor: url('/img/more.png') 17 17, pointer;
+}
+
+.masonryItem:hover .masonryTitle {
+  opacity: 1;
+  transform: translateY(0);
+}

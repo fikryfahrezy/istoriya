@@ -1,0 +1,30 @@
+.centerText {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .centerText {
+    max-width: 66.666667%;
+    flex: 0 0 66.666667%;
+  }
+}
+
+.centerParagraf {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+@media (max-width: 575px) {
+  .centerParagraf {
+    font-size: 1.05rem;
+  }
+}

@@ -1,0 +1,304 @@
+.pageContainer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .pageContainer {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pageContainer {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pageContainer {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pageContainer {
+    max-width: 1140px;
+  }
+}
+
+.innerPageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .innerPageContainer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.pageImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.halfImgContainer {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .halfImgContainer {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+.halfImgRight {
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .halfImgRight {
+    margin-top: 0;
+  }
+}
+
+.containerFluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.innerContainerFluid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+@media (min-width: 1200px) {
+  .innerContainerFluid {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.listContainer {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-self: center;
+}
+
+@media (min-width: 1200px) {
+  .listContainer {
+    max-width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    flex: 0 0 50%;
+  }
+}
+
+.innerListContainer {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  .innerListContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.listTitle {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.listParagraph {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.firstList {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .firstList {
+    max-width: 66.666667%;
+    flex: 0 0 66.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .firstList {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .firstList {
+    max-width: 41.666667%;
+    flex: 0 0 41.666667%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .firstList {
+    margin-left: 41.666667%;
+    text-align: right;
+  }
+}
+
+.secondList {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .secondList {
+    max-width: 66.666667%;
+    flex: 0 0 66.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .secondList {
+    max-width: 50%;
+    margin-top: 0;
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .secondList {
+    max-width: 41.666667%;
+    flex: 0 0 41.666667%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .secondList {
+    margin-top: 3rem;
+    margin-left: 41.666667%;
+    text-align: right;
+  }
+}
+
+.thirdList {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .thirdList {
+    max-width: 66.666667%;
+    flex: 0 0 66.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .thirdList {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .thirdList {
+    max-width: 41.666667%;
+    flex: 0 0 41.666667%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .thirdList {
+    margin-left: 41.666667%;
+    text-align: right;
+  }
+}
+
+.sideImage {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  order: -1;
+}
+
+@media (min-width: 1200px) {
+  .sideImage {
+    max-width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    flex: 0 0 50%;
+    order: 1;
+  }
+}
+
+.border {
+  width: 100%;
+  margin-top: 0;
+}
+
+@media (min-width: 1200px) {
+  .border {
+    margin-top: 3rem;
+  }
+}

@@ -1,0 +1,37 @@
+.cursorOne,
+.cursorTwo,
+.cursorThree {
+  position: fixed;
+  border-radius: 50%;
+  left: -100px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+}
+
+.cursor {
+  position: fixed;
+  left: -100px;
+  top: 50%;
+  z-index: 4;
+  transition: transform 0.5s, opacity 0.5s;
+  pointer-events: none;
+}
+
+.cursorOne {
+  height: 0;
+  width: 0;
+  background-color: #fff;
+}
+
+.cursorTwo {
+  border: 2px solid #fff;
+  box-shadow: 0 0 22px rgb(255 255 255 / 60%);
+}
+
+.cursorTwo,
+.cursorThree {
+  height: 36px;
+  width: 36px;
+  transition: all 0.3s ease-out;
+}

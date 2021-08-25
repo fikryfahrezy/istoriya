@@ -1,0 +1,15 @@
+.fullMediaContainer {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 100%;
+}
+
+.imgWrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+}
