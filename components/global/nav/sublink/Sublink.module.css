@@ -1,14 +1,27 @@
+.navBtn {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navBtn,
 .navAnchor {
   position: relative;
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
   color: rgba(255, 255, 255, 0.6);
+  font-family: 'Poppins', sans-serif;
+  font-size: 8vh;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.05;
+  letter-spacing: 3px;
   cursor: pointer;
   overflow: hidden;
   transition: all 200ms linear;
 }
 
+.navBtn::after,
 .navAnchor::after {
   position: absolute;
   content: '';
@@ -22,33 +35,47 @@
   transition: all 200ms linear;
 }
 
+.navBtn:hover,
 .navAnchor:hover {
   color: rgba(255, 255, 255, 1);
 }
 
+.navBtn:hover::after,
 .navAnchor:hover::after {
   height: 20px;
   opacity: 1;
 }
 
-.activeSubList {
-  visibility: visible;
-}
-
 .subLink {
   position: relative;
+  display: block;
+  /* height: 145px; */
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
   transition: all 200ms linear;
 }
 
+.collapse {
+  height: 0 !important;
+  margin-bottom: 0px;
+}
+
+.firstRender {
+  position: absolute;
+  height: min-content !important;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.activeSubList {
+  visibility: visible;
+}
+
 .subLinkList {
   display: block;
   padding: 0;
-  margin: 0 auto;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin: 7px auto 7px;
   text-align: center;
 }
 

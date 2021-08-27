@@ -1,5 +1,6 @@
 import type { MouseEvent, ReactNode } from 'react';
 import { useEffect, useRef, useContext, useState } from 'react';
+import { useRouter } from 'next/router';
 import { CusrorContext } from '../../context/Cursor';
 import Header from './header';
 import Nav from './nav';
@@ -14,11 +15,16 @@ type GlobalProps = {
 };
 
 const Global = ({ children }: GlobalProps) => {
-  const [isNavOpen, setNavOpen] = useState(false);
+  const router = useRouter();
   const { cursorRef } = useContext(CusrorContext);
+  const [isNavOpen, setNavOpen] = useState(false);
   const header = useRef<HTMLElement>(null);
   const isMounted = useRef(false);
   const lastScrTop = useRef(0);
+  const firstPathname = useRef('');
+  const key = 'isRendered';
+
+  firstPathname.current = router.pathname;
 
   const toggleNav = function toggleNav() {
     setNavOpen(!isNavOpen);
@@ -84,6 +90,8 @@ const Global = ({ children }: GlobalProps) => {
   useEffect(() => {
     isMounted.current = true;
 
+    window.localStorage.setItem(key, '');
+
     // NOTE: Window object in React
     // https://stackoverflow.com/questions/37081803/how-do-i-use-the-window-object-in-reactjs
     window.addEventListener('scroll', trackScroll);
@@ -93,6 +101,10 @@ const Global = ({ children }: GlobalProps) => {
       window.removeEventListener('scroll', trackScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (firstPathname.current !== '/') window.localStorage.setItem(key, '1');
+  }, [router]);
 
   return (
     <div className={style.overHide} onMouseMove={mouseMove}>

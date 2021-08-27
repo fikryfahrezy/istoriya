@@ -76,7 +76,7 @@ const ArticleWrapper = ({ children }: ArticleWrapperProps) => {
           </div>
         </div>
       </div>
-      <main className={style.mainContainer}>{children}</main>
+      {children}
       <footer className={style.footerContainer}>
         <ScrollAnimation
           animateIn="animate__fadeInUp"
@@ -84,7 +84,7 @@ const ArticleWrapper = ({ children }: ArticleWrapperProps) => {
           offset={0}
           className={style.footerBg}
         >
-          LEtoile Feb
+          The Battle
         </ScrollAnimation>
         <ScrollAnimation
           animateIn="animate__fadeInUp"

@@ -1,121 +1,104 @@
 import 'swiper/swiper.min.css';
 import type { MouseEvent } from 'react';
-import { useContext, useRef, useEffect, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { useContext, useRef, useEffect, useReducer } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Mousewheel, Scrollbar } from 'swiper/core';
 import { CusrorContext } from '../../context/Cursor';
+import Link from 'next/link';
 import style from './Home.module.css';
+import components from './components';
+
+type ACTIONTYPE =
+  | {
+      type: 'RENDER';
+      payload: {
+        sliderIndex: number;
+        isRendered: boolean;
+      };
+    }
+  | {
+      type: 'START';
+      payload: {
+        isStart: boolean;
+        isWithMusic: boolean;
+        isWithVideo: boolean;
+      };
+    }
+  | { type: 'SETINDEX'; payload: number }
+  | { type: 'SETDRAWER'; payload: boolean };
+
+const initialState = {
+  sliderIndex: -1,
+  isStarted: false,
+  isWithVideo: false,
+  isWithMusic: false,
+  isRendered: false,
+  isDrawerOpen: false,
+};
+
+const reducer: (
+  state: typeof initialState,
+  action: ACTIONTYPE,
+) => typeof initialState = function reducer(state, action) {
+  switch (action.type) {
+    case 'RENDER':
+      return {
+        ...state,
+        isRendered: action.payload.isRendered,
+        sliderIndex: action.payload.sliderIndex,
+      };
+    case 'START':
+      return {
+        ...state,
+        isStarted: action.payload.isStart,
+        isWithMusic: action.payload.isWithMusic,
+        isWithVideo: action.payload.isWithVideo,
+      };
+    case 'SETINDEX':
+      return { ...state, sliderIndex: action.payload };
+    case 'SETDRAWER':
+      return { ...state, isDrawerOpen: action.payload };
+    default:
+      return state;
+  }
+};
 
 // install Swiper modules
 SwiperCore.use([Mousewheel, Scrollbar]);
 
-const data = [
-  {
-    id: '1',
-    link: '/blog',
-    title: 'awal mula',
-  },
-  {
-    id: '2',
-    link: '/blog',
-    title: '1590',
-  },
-  {
-    id: '3',
-    link: '/blog',
-    title: '27 Juni 1596',
-  },
-  {
-    id: '4',
-    link: '/blog',
-    title: 'sejak ABAD 16',
-  },
-  {
-    id: '5',
-    link: '/blog',
-    title: '20 Maret 1602',
-  },
-  {
-    id: '6',
-    link: '/blog',
-    title: '17 Maret 1798',
-  },
-  {
-    id: '7',
-    link: '/blog',
-    title: '1811',
-  },
-  {
-    id: '8',
-    link: '/blog',
-    title: '1816',
-  },
-  {
-    id: '9',
-    link: '/blog',
-    title: 'ABAD 18',
-  },
-  {
-    id: '10',
-    link: '/blog',
-    title: '1830-1870',
-  },
-  {
-    id: '11',
-    link: '/blog',
-    title: '1905-1908',
-  },
-  {
-    id: '12',
-    link: '/blog',
-    title: '28 Okt 1928',
-  },
-  {
-    id: '13',
-    link: '/blog',
-    title: '8 Maret 1942',
-  },
-  {
-    id: '14',
-    link: '/blog',
-    title: '1 Maret 1945',
-  },
-  {
-    id: '15',
-    link: '/blog',
-    title: 'Agustus 1945',
-  },
-  {
-    id: '16',
-    link: '/blog',
-    title: '16 Agustus 1916',
-  },
-  {
-    id: '17',
-    link: '/blog',
-    title: '17 Agustus 1945',
-  },
-];
-
 const Home = () => {
+  const [
+    {
+      sliderIndex,
+      isRendered,
+      isStarted,
+      isWithMusic,
+      isWithVideo,
+      isDrawerOpen,
+    },
+    dispatch,
+  ] = useReducer(reducer, initialState);
   const { cursorRef, isMobile } = useContext(CusrorContext);
-  const [sliderIndex, setSliderIndex] = useState(-1);
-  const [isStarted, setStarted] = useState(false);
   const sliderScrollbar = useRef<HTMLDivElement>(null);
   const audioElement = useRef<HTMLAudioElement>(null);
+  const drawer = useRef<HTMLDivElement>(null);
+  const drawerOption = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setSliderIndex(0);
+    const isRendered = Boolean(window.localStorage.getItem('isRendered'));
+
+    dispatch({ type: 'RENDER', payload: { isRendered, sliderIndex: 0 } });
+
+    if (drawer.current && drawerOption.current)
+      drawer.current.style.transform = `translateY(${drawerOption.current.clientHeight}px)`;
   }, []);
 
   useEffect(() => {
-    if (isStarted && audioElement.current) {
+    if ((isStarted || isRendered) && audioElement.current) {
       audioElement.current.play();
       audioElement.current.volume = 0.1;
     }
-  }, [isStarted]);
+  }, [isStarted, isRendered]);
 
   const toggleCursor = function toggleCursor(
     isOn: boolean,
@@ -145,24 +128,36 @@ const Home = () => {
   };
 
   const changeCurrSlider = function changeCurrSlider(index: number) {
-    setSliderIndex(index);
+    dispatch({ type: 'SETINDEX', payload: index });
   };
 
-  const startPage = function startPage() {
-    setStarted(true);
+  const startPage = function startPage(withMedia: boolean) {
+    dispatch({
+      type: 'START',
+      payload: {
+        isWithMusic: withMedia,
+        isWithVideo: withMedia,
+        isStart: true,
+      },
+    });
+  };
+
+  const toggleDrawer = function toggleDrawer() {
+    dispatch({ type: 'SETDRAWER', payload: !isDrawerOpen });
+    console.log(isDrawerOpen);
   };
 
   return (
     <>
       <main
         className={`${style.sliderContainer} ${
-          isStarted ? '' : style.hideScreen
+          isStarted || isRendered ? '' : style.hideScreen
         }`}
         onMouseDown={mouseDown}
         onMouseUp={mouseUpOut}
         onMouseOut={mouseUpOut}
       >
-        {isStarted && (
+        {(isStarted || isRendered) && (
           <Swiper
             autoplay={false}
             breakpoints={{
@@ -186,7 +181,7 @@ const Home = () => {
             touchStartPreventDefault={false}
             className={`${style.sliderWrapper} ${style.sliderSlide} ${style.sliderFreeMode}`}
           >
-            {data.map(({ id, link, title }, i) => (
+            {components.map(({ id, link, title }, i) => (
               <SwiperSlide
                 key={id}
                 className={`${style.sliderList} ${
@@ -214,67 +209,104 @@ const Home = () => {
           ></button>
         </div>
       </main>
-      <div className={`${isStarted ? '' : style.hideScreen}`}>
-        <div className={style.bgImg}>
-          <video width="1920" autoPlay muted className={style.videoBg}>
+      <div
+        className={`${style.bgContainer} ${
+          isStarted || isRendered ? '' : style.hideScreen
+        }`}
+      >
+        {isWithVideo && (
+          <div
+            style={{ opacity: '0.2' }}
+            className={`${style.bgImg} ${style.bgVideo}`}
+          >
+            <video width="1920" autoPlay muted className={style.videoBg}>
+              <source
+                src={`${process.env.NEXT_PUBLIC_ASSETS_URL}/video/upload/v1629899323/istoriya/video/videoplayback_booads.webm`}
+                type="video/webm"
+              />
+              <source
+                src={`${process.env.NEXT_PUBLIC_ASSETS_URL}/video/upload/v1629899319/istoriya/video/videoplayback_grqrau.mp4`}
+                type="video/mp4"
+              />
+              Sorry, your browser doesnt support embedded videos.
+            </video>
+          </div>
+        )}
+        {isWithMusic && (
+          <audio ref={audioElement} loop={true}>
             <source
-              src={`${process.env.NEXT_PUBLIC_ASSETS_URL}/video/upload/v1629899323/istoriya/video/videoplayback_booads.webm`}
-              type="video/webm"
+              src={`${process.env.NEXT_PUBLIC_ASSETS_URL}/video/upload/v1629901603/istoriya/audio/audioplayback_zk5vx0.webm`}
+              type="audio/webm"
             />
             <source
-              src={`${process.env.NEXT_PUBLIC_ASSETS_URL}/video/upload/v1629899319/istoriya/video/videoplayback_grqrau.mp4`}
-              type="video/mp4"
+              src={`${process.env.NEXT_PUBLIC_ASSETS_URL}/video/upload/v1629901605/istoriya/audio/audioplayback_khuujf.mp3`}
+              type="audio/mpeg"
             />
-            Sorry, your browser doesnt support embedded videos.
-          </video>
-        </div>
+            Your browser does not support the audio element.
+          </audio>
+        )}
         <ul className={style.bgPage}>
-          {data.map(({ id, title }, i) => (
+          {components.map(({ id, title }, i) => (
             <li
               key={id}
               className={`${style.bgList} ${
                 i === sliderIndex ? style.show : ''
               }`}
             >
+              <div
+                style={{ display: isWithVideo ? 'none' : 'block' }}
+                className={style.bgImg}
+              ></div>
               <h2 className={style.bgTitle}>{title}</h2>
               <div className={style.bgCurrNum}>
                 {String(i + 1).padStart(2, '0')}
               </div>
               <div className={style.bgMaxNum}>
-                {String(data.length).padStart(2, '0')}
+                {String(components.length).padStart(2, '0')}
               </div>
             </li>
           ))}
         </ul>
-        <audio ref={audioElement} loop={true}>
-          <source
-            src={`${process.env.NEXT_PUBLIC_ASSETS_URL}/video/upload/v1629901603/istoriya/audio/audioplayback_zk5vx0.webm`}
-            type="audio/webm"
-          />
-          <source
-            src={`${process.env.NEXT_PUBLIC_ASSETS_URL}/video/upload/v1629901605/istoriya/audio/audioplayback_khuujf.mp3`}
-            type="audio/mpeg"
-          />
-          Your browser does not support the audio element.
-        </audio>
+      </div>
+      <div
+        className={`${style.drawer}  ${isDrawerOpen ? style.show : ''}
+          ${isStarted || isRendered ? '' : style.hideScreen}`}
+        ref={drawer}
+      >
+        <div className={style.drawerBtnContainer}>
+          <button
+            className={`hover-target ${style.btnDrawer}`}
+            onClick={toggleDrawer}
+          ></button>
+        </div>
+        <div className={style.optionBtnWrapper} ref={drawerOption}>
+          <button className={`hover-target ${style.optionBtn}`}>
+            Play Video
+          </button>
+          <button className={`hover-target ${style.optionBtn}`}>
+            Play Music
+          </button>
+        </div>
       </div>
       <div
         className={`${style.landingContainer} ${
-          isStarted ? style.hideScreen : ''
+          !isStarted && !isRendered ? '' : style.hideScreen
         }`}
       >
-        <Image
-          src="/img/started.jpg"
-          layout="fill"
-          alt="Started Image"
-          className={style.startImg}
-        />
+        <div className={style.bgImg}></div>
+        <h2 className={style.bgTitle}>starting</h2>
         <div className={style.landingWrapper}>
           <button
             className={`hover-target ${style.startBtn}`}
-            onClick={startPage}
+            onClick={() => startPage(true)}
           >
-            Get Started
+            With Media
+          </button>
+          <button
+            className={`hover-target ${style.startBtn}`}
+            onClick={() => startPage(false)}
+          >
+            No Media
           </button>
         </div>
       </div>

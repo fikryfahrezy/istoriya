@@ -14,7 +14,7 @@
   left: -100px;
   top: 50%;
   z-index: 4;
-  transition: transform 0.5s, opacity 0.5s;
+  transition: all 0.3s ease-out;
   pointer-events: none;
 }
 

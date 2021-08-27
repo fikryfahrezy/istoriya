@@ -98,13 +98,6 @@
   display: block;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-size: 8vh;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: 3px;
   overflow: hidden;
   opacity: 0;
   transition-delay: 0.8s;
@@ -122,10 +115,12 @@
   visibility: visible;
 }
 
+.activeList > button,
 .activeList > a {
   color: rgba(255, 255, 255, 1);
 }
 
+.activeList > button::after,
 .activeList > a::after {
   height: 20px;
   opacity: 1;

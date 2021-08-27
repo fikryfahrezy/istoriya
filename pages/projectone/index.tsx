@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import IndexPage from '../../components/projectone';
+import ProjectOne from '../../components/projectone';
 
-const ProjectOne: NextPage = () => {
-  return <IndexPage />;
+const IndexPage: NextPage = () => {
+  return <ProjectOne />;
 };
 
-export default ProjectOne;
+export default IndexPage;
