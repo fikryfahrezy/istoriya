@@ -1,0 +1,22 @@
+.paragraphContainer {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.paragraph {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+@media (max-width: 575px) {
+  .paragraph {
+    font-size: 1.05rem;
+  }
+}

@@ -21,7 +21,7 @@ const Header = forwardRef<HTMLElement | null, HeaderProps>(
             <Link href="/">
               <a>
                 <Image
-                  src="/img/logo.png"
+                  src="/img/elements/logo.png"
                   alt="Logo Image"
                   width="102"
                   height="12"

@@ -1,0 +1,13 @@
+.halfImgContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .halfImgContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

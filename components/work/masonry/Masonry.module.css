@@ -138,7 +138,7 @@
   float: left;
   transform: translate3d(1px, 0, 0);
   transition: all 300ms linear;
-  cursor: url('/img/more.png') 17 17, pointer;
+  cursor: url('/img/elements/more.png') 17 17, pointer;
 }
 
 @media (max-width: 767px) {
@@ -169,7 +169,7 @@
   left: 0;
   background-color: rgba(31, 32, 41, 0);
   transition: all 200ms linear;
-  cursor: url('/img/more.png') 17 17, pointer;
+  cursor: url('/img/elements/more.png') 17 17, pointer;
 }
 
 .masonryItem:hover .masonryMask {
@@ -192,7 +192,7 @@
   transform: translateX(20px);
   transition: all 300ms linear;
   writing-mode: vertical-lr;
-  cursor: url('/img/more.png') 17 17, pointer;
+  cursor: url('/img/elements/more.png') 17 17, pointer;
 }
 
 .masonryItem:hover .masonryText {
@@ -212,7 +212,7 @@
   letter-spacing: 2px;
   transition: all 300ms linear;
   transform: translateY(-20px);
-  cursor: url('/img/more.png') 17 17, pointer;
+  cursor: url('/img/elements/more.png') 17 17, pointer;
 }
 
 .masonryItem:hover .masonryTitle {

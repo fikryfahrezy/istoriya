@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import style from './Nav.module.css';
 import Sublink from './sublink';
-import components from './components';
+import components from '../../../data/nav.json';
 
 type NavProps = {
   isActive: boolean;

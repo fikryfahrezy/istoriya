@@ -180,7 +180,7 @@
 }
 
 .cursorIcon {
-  cursor: url('/img/grabbing.png') 28 15, grabbing;
+  cursor: url('/img/elements/grabbing.png') 28 15, grabbing;
 }
 
 .bgContainer {
@@ -217,7 +217,6 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-image: url('/img/1.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -332,10 +331,16 @@
   transition: transform 250ms linear;
 }
 
-.show.drawer,
-.drawer:hover {
+.show.drawer {
   transform: translateY(0) !important;
   background-color: rgba(20, 21, 26, 0.6);
+}
+
+@media (min-width: 1200px) {
+  .drawer:hover {
+    transform: translateY(0) !important;
+    background-color: rgba(20, 21, 26, 0.6);
+  }
 }
 
 .drawerBtnContainer {
@@ -360,12 +365,22 @@
   z-index: 1;
 }
 
-.drawer:hover .btnDrawer {
+.show .btnDrawer {
   transform: rotate(45deg) translate3d(-10px, -10px, 0px);
   border-right: 2.5px solid rgba(255, 255, 255, 0.4);
   border-bottom: 2.5px solid rgba(255, 255, 255, 0.4);
   border-top: 0;
   border-left: 0;
+}
+
+@media (min-width: 1200px) {
+  .drawer:hover .btnDrawer {
+    transform: rotate(45deg) translate3d(-10px, -10px, 0px);
+    border-right: 2.5px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2.5px solid rgba(255, 255, 255, 0.4);
+    border-top: 0;
+    border-left: 0;
+  }
 }
 
 .optionBtnWrapper {
@@ -418,6 +433,7 @@
   }
 }
 
+.show.optionBtn,
 .optionBtn:hover {
   opacity: 1;
 }
@@ -435,6 +451,7 @@
   transition: all 200ms linear;
 }
 
+.show.optionBtn::after,
 .optionBtn:hover::after {
   opacity: 1;
   height: 10px;
@@ -452,7 +469,7 @@
 }
 
 .landingContainer .bgImg {
-  background-image: url('/img/startimg.jpg');
+  background-image: url('/img/landing.jpg');
   opacity: 0.2;
 }
 

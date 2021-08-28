@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Masonry from 'react-masonry-component';
-import ArticleWrapper from '../../wrapper/article';
+import PageWrapper from '../../wrapper/page';
 import style from './Masonry.module.css';
 
 const Studio = () => {
   return (
-    <ArticleWrapper>
+    <PageWrapper title="The Battler" highlight="Never Ending">
       <div className={style.pageContainer}>
         <div className={style.innerPageContainer}>
           <div className={style.topContainer}>
@@ -40,7 +40,7 @@ const Studio = () => {
             <Masonry>
               <div className={style.masonryItem}>
                 <Image
-                  src="/img/2.jpg"
+                  src="/img/placeholders/2.jpg"
                   width="523"
                   height="653"
                   alt="Gallery Image"
@@ -52,7 +52,7 @@ const Studio = () => {
               </div>
               <div className={style.masonryItem}>
                 <Image
-                  src="/img/2.jpg"
+                  src="/img/placeholders/2.jpg"
                   width="523"
                   height="523"
                   alt="Gallery Image"
@@ -64,7 +64,7 @@ const Studio = () => {
               </div>
               <div className={style.masonryItem}>
                 <Image
-                  src="/img/2.jpg"
+                  src="/img/placeholders/2.jpg"
                   width="523"
                   height="642"
                   alt="Gallery Image"
@@ -76,7 +76,7 @@ const Studio = () => {
               </div>
               <div className={style.masonryItem}>
                 <Image
-                  src="/img/1.jpg"
+                  src="/img/placeholders/1.jpg"
                   width="523"
                   height="361"
                   alt="Gallery Image"
@@ -88,7 +88,7 @@ const Studio = () => {
               </div>
               <div className={style.masonryItem}>
                 <Image
-                  src="/img/1.jpg"
+                  src="/img/placeholders/1.jpg"
                   width="523"
                   height="348"
                   alt="Gallery Image"
@@ -100,7 +100,7 @@ const Studio = () => {
               </div>
               <div className={style.masonryItem}>
                 <Image
-                  src="/img/2.jpg"
+                  src="/img/placeholders/2.jpg"
                   width="523"
                   height="579"
                   alt="Gallery Image"
@@ -112,7 +112,7 @@ const Studio = () => {
               </div>
               <div className={style.masonryItem}>
                 <Image
-                  src="/img/2.jpg"
+                  src="/img/placeholders/2.jpg"
                   width="523"
                   height="677"
                   alt="Gallery Image"
@@ -124,7 +124,7 @@ const Studio = () => {
               </div>
               <div className={style.masonryItem}>
                 <Image
-                  src="/img/1.jpg"
+                  src="/img/placeholders/1.jpg"
                   width="523"
                   height="294"
                   alt="Gallery Image"
@@ -138,7 +138,7 @@ const Studio = () => {
           </div>
         </div>
       </div>
-    </ArticleWrapper>
+    </PageWrapper>
   );
 };
 

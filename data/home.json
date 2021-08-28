@@ -1,0 +1,104 @@
+[
+  {
+    "id": "1",
+    "link": "/blog/1",
+    "title": "awal mula",
+    "img": "/img/contents/pendahuluan.jpg"
+  },
+  {
+    "id": "2",
+    "link": "/blog/2",
+    "title": "1590",
+    "img": "/img/contents/portugis.jpg"
+  },
+  {
+    "id": "3",
+    "link": "/blog/1",
+    "title": "27 Juni 1596",
+    "img": "/img/contents/spanyol.jpg"
+  },
+  {
+    "id": "4",
+    "link": "/blog/2",
+    "title": "sejak ABAD 16",
+    "img": "/img/contents/pendahuluan.jpg"
+  },
+  {
+    "id": "5",
+    "link": "/blog/1",
+    "title": "20 Maret 1602",
+    "img": "/img/contents/portugis.jpg"
+  },
+  {
+    "id": "6",
+    "link": "/blog/2",
+    "title": "17 Maret 1798",
+    "img": "/img/contents/spanyol.jpg"
+  },
+  {
+    "id": "7",
+    "link": "/blog/1",
+    "title": "1811",
+    "img": "/img/contents/pendahuluan.jpg"
+  },
+  {
+    "id": "8",
+    "link": "/blog/2",
+    "title": "1816",
+    "img": "/img/contents/portugis.jpg"
+  },
+  {
+    "id": "9",
+    "link": "/blog/1",
+    "title": "ABAD 18",
+    "img": "/img/contents/spanyol.jpg"
+  },
+  {
+    "id": "10",
+    "link": "/blog/2",
+    "title": "1830-1870",
+    "img": "/img/contents/pendahuluan.jpg"
+  },
+  {
+    "id": "11",
+    "link": "/blog/1",
+    "title": "1905-1908",
+    "img": "/img/contents/portugis.jpg"
+  },
+  {
+    "id": "12",
+    "link": "/blog/2",
+    "title": "28 Okt 1928",
+    "img": "/img/contents/spanyol.jpg"
+  },
+  {
+    "id": "13",
+    "link": "/blog/1",
+    "title": "8 Maret 1942",
+    "img": "/img/contents/pendahuluan.jpg"
+  },
+  {
+    "id": "14",
+    "link": "/blog/2",
+    "title": "1 Maret 1945",
+    "img": "/img/contents/portugis.jpg"
+  },
+  {
+    "id": "15",
+    "link": "/blog/1",
+    "title": "Agustus 1945",
+    "img": "/img/contents/spanyol.jpg"
+  },
+  {
+    "id": "16",
+    "link": "/blog/2",
+    "title": "16 Agustus 1916",
+    "img": "/img/contents/pendahuluan.jpg"
+  },
+  {
+    "id": "17",
+    "link": "/blog/1",
+    "title": "17 Agustus 1945",
+    "img": "/img/contents/portugis.jpg"
+  }
+]

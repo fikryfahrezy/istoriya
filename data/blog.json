@@ -1,0 +1,278 @@
+[
+  {
+    "id": "1",
+    "title": "Pendahuluan",
+    "highlight": "Geologi, Sejarah Awal",
+    "components": [
+      {
+        "id": "1",
+        "type": "SUBTITLE",
+        "subtitle": {
+          "text": "Geologi"
+        },
+        "paragraph": null,
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "2",
+        "type": "PARAGRAPH",
+        "subtitle": null,
+        "paragraph": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+        },
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "3",
+        "type": "IMG",
+        "subtitle": null,
+        "paragraph": null,
+        "img": {
+          "src": "/img/contents/map1.jpg",
+          "width": "780px",
+          "height": "395px",
+          "alt": "Big Image",
+          "description": ""
+        },
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "4",
+        "type": "PARAGRAPH",
+        "subtitle": null,
+        "paragraph": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+        },
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "5",
+        "type": "SUBTITLE",
+        "subtitle": {
+          "text": "Geologi"
+        },
+        "paragraph": null,
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "6",
+        "type": "PARAGRAPH",
+        "subtitle": null,
+        "paragraph": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+        },
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "7",
+        "type": "PARAGRAPH",
+        "subtitle": null,
+        "paragraph": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+        },
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Kololialisme",
+    "highlight": "Awal penjelajahan, Ekspedisi ke Indonesia Timur, Upaya Penyebaran Agama",
+    "components": [
+      {
+        "id": "1",
+        "type": "PARAGRAPH",
+        "subtitle": null,
+        "paragraph": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+        },
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "2",
+        "type": "IMGPARAGRAPH",
+        "subtitle": null,
+        "paragraph": null,
+        "img": null,
+        "imgparagraph": {
+          "img": {
+            "src": "/img/contents/person.jpg",
+            "width": "273px",
+            "height": "419px",
+            "alt": "Big Image",
+            "position": "LEFT",
+            "description": ""
+          },
+          "paragraph": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+          }
+        },
+        "halfimg": null
+      },
+      {
+        "id": "3",
+        "type": "SUBTITLE",
+        "subtitle": {
+          "text": "Awal Penjelajahan"
+        },
+        "paragraph": null,
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "4",
+        "type": "PARAGRAPH",
+        "subtitle": null,
+        "paragraph": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+        },
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "5",
+        "type": "IMG",
+        "subtitle": null,
+        "paragraph": null,
+        "img": {
+          "src": "/img/contents/people1.jpg",
+          "width": "780px",
+          "height": "395px",
+          "alt": "Big Image",
+          "description": ""
+        },
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "6",
+        "type": "PARAGRAPH",
+        "subtitle": null,
+        "paragraph": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+        },
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "7",
+        "type": "IMGPARAGRAPH",
+        "subtitle": null,
+        "paragraph": null,
+        "img": null,
+        "imgparagraph": {
+          "img": {
+            "src": "/img/contents/spice1.jpg",
+            "width": "219px",
+            "height": "291px",
+            "alt": "Big Image",
+            "position": "RIGHT",
+            "description": "Suspendisse placerat commodo lacus eu rhoncus. Praesent euismod felis nunc, sed mattis dolor mollis vel. Sed mollis mauris sit amet mauris consectetur posuere. Integer ullamcorper, nibh vel placerat congue, quam metus vulputate nisi, vel sodales diam lorem a mi."
+          },
+          "paragraph": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+          }
+        },
+        "halfimg": null
+      },
+      {
+        "id": "8",
+        "type": "IMGPARAGRAPH",
+        "subtitle": null,
+        "paragraph": null,
+        "img": null,
+        "imgparagraph": {
+          "img": {
+            "src": "/img/contents/people2.jpg",
+            "width": "426px",
+            "height": "314px",
+            "alt": "Big Image",
+            "position": "LEFT",
+            "description": ""
+          },
+          "paragraph": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum. Suspendisse placerat commodo lacus eu rhoncus. Praesent euismod felis nunc, sed mattis dolor mollis vel. Sed mollis mauris sit amet mauris consectetur posuere. Integer ullamcorper, nibh vel placerat congue, quam metus vulputate nisi, vel sodales diam lorem a mi. Aenean ullamcorper libero eu dolor pretium, a congue augue mollis. Donec ultrices porttitor ipsum id convallis. Mauris tempor aliquam luctus. Suspendisse potenti. Vestibulum ultricies ligula vel eleifend ullamcorper. In hac habitasse platea dictumst. Vivamus in lectus sed nibh bibendum rhoncus porttitor pretium libero. In tristique odio non efficitur ullamcorper. Sed dui lorem, aliquet eu scelerisque non, tincidunt eget tellus. Maecenas viverra sodales ex, sit amet feugiat nisl fringilla sed. Morbi imperdiet euismod sapien, eu auctor massa dapibus sit amet. Nulla luctus nec tortor eu cursus."
+          }
+        },
+        "halfimg": null
+      },
+      {
+        "id": "9",
+        "type": "PARAGRAPH",
+        "subtitle": null,
+        "paragraph": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+        },
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "10",
+        "type": "SUBTITLE",
+        "subtitle": {
+          "text": "Ekspedisi ke Indonesia Timur"
+        },
+        "paragraph": null,
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      },
+      {
+        "id": "11",
+        "type": "HALFIMG",
+        "subtitle": null,
+        "paragraph": null,
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": {
+          "rightimg": {
+            "src": "/img/contents/map2.jpg",
+            "width": "358px",
+            "height": "358px",
+            "alt": "Big Image",
+            "position": "NONE",
+            "description": ""
+          },
+          "leftimg": {
+            "src": "/img/contents/spice2.jpg",
+            "width": "358px",
+            "height": "358px",
+            "alt": "Big Image",
+            "position": "NONE",
+            "description": ""
+          }
+        }
+      },
+      {
+        "id": "12",
+        "type": "PARAGRAPH",
+        "subtitle": null,
+        "paragraph": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur sed est ut sollicitudin. Praesent suscipit finibus gravida. Suspendisse potenti. Fusce at tempor ligula. Nulla consequat ex quam, eget iaculis neque feugiat et. Morbi eu euismod leo. Suspendisse ultrices ullamcorper elit, non faucibus est posuere in. Donec pulvinar molestie mollis. Sed tincidunt tellus lorem. Vestibulum sagittis, risus in vehicula laoreet, libero felis vehicula turpis, at dapibus urna ligula vel neque. In ligula ligula, vulputate eu diam hendrerit, volutpat tristique erat. Phasellus maximus eget arcu ut consequat. Quisque semper sem pharetra, tempus mi eget, lobortis nisi. Praesent pulvinar id turpis vel dictum."
+        },
+        "img": null,
+        "imgparagraph": null,
+        "halfimg": null
+      }
+    ]
+  }
+]
