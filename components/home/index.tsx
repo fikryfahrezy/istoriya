@@ -1,11 +1,11 @@
-import 'swiper/swiper.min.css';
+import Link from 'next/link';
 import type { MouseEvent } from 'react';
-import { useContext, useRef, useEffect, useReducer } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { useContext, useEffect, useReducer, useRef } from 'react';
 import SwiperCore, { Mousewheel, Scrollbar } from 'swiper/core';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.min.css';
 import { CusrorContext } from '../../context/Cursor';
 import components from '../../data/home.json';
-import Link from 'next/link';
 import style from './Home.module.css';
 
 type ACTIONTYPE =
