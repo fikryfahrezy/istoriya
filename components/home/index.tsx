@@ -322,13 +322,7 @@ const Home = () => {
             className={`hover-target ${style.startBtn}`}
             onClick={() => startPage(true)}
           >
-            With Media
-          </button>
-          <button
-            className={`hover-target ${style.startBtn}`}
-            onClick={() => startPage(false)}
-          >
-            No Media
+            Start Explore
           </button>
         </div>
       </div>
